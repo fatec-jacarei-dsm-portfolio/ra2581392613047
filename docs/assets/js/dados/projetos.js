@@ -1,0 +1,127 @@
+/* ==========================================================================
+   PROJETOS EM DESTAQUE (resumo) — usados nos cards da página inicial e na
+   navegação entre estudos de caso. O conteúdo completo de cada estudo de caso
+   fica em dados/estudos/<slug>.js e só é carregado em projeto.html?p=<slug>.
+
+   Campos que a orientação da Fatec pede em cada projeto:
+   nome · tagline (descrição) · contribuicaoResumo (contribuição pessoal)
+   · tecnologiasPrincipais · repo.url · semestre ("4DSM – 2º Sem. 2026")
+   Conteúdo conferido nos repositórios do GitHub em 03/11/2026.
+   ========================================================================== */
+window.PORTFOLIO = window.PORTFOLIO || {};
+
+PORTFOLIO.projetos = [
+  {
+    slug: 'abp-4dsm-2026-2',
+    categoria: 'academico',
+    abp: true,
+    semestre: '4DSM – 2º Sem. 2026',
+    cor: 'fogo',
+    nome: 'Passe: Controle de Acesso',
+    tagline: 'Controle de acesso a catracas por QR Code dinâmico e NFC, com app Flutter, API Node.js e terminal ESP32.',
+    contexto: 'ABP · 4º semestre DSM · Fatec Jacareí',
+    periodo: 'out.–nov. 2026',
+    status: { tipo: 'andamento', rotulo: 'Em desenvolvimento' },
+    papel: 'Dev Team · front-end mobile (Flutter)',
+    repo: { full: 'CRIMS0NC0DE/4DSM-ABP-2026-2', url: 'https://github.com/CRIMS0NC0DE/4DSM-ABP-2026-2' },
+    capa: {
+      src: 'assets/img/projetos/abp-4dsm-2026-2/prototipo-fluxo-g.webp',
+      mini: 'assets/img/projetos/abp-4dsm-2026-2/prototipo-fluxo-m.webp',
+      largura: 1500,
+      altura: 883,
+      posicao: 'left top',
+      alt: 'Protótipo do app Passe: login, início, scanner de QR Code e validação do acesso',
+      legenda: 'Protótipo do fluxo principal do app (docs/Design.pdf do repositório).',
+    },
+    tecnologiasPrincipais: ['Flutter', 'Dart', 'Node.js', 'TypeScript', 'PostgreSQL', 'MQTT', 'ESP32'],
+    contribuicaoResumo: 'Trabalhei principalmente no app Flutter: montei a base do app (arquitetura, tema Material 3 acessível e componentes), integrei as telas à API REST com sessão JWT e entreguei o fluxo completo de acesso por QR Code (PR #17). Na branch dev-thiago, fiz também as telas do morador, do visitante e da equipe e correções no back-end.',
+    estatisticas: {
+      commits: 31,
+      commitsObs: '26 sem contar merge',
+      prs: 1,
+      linhasAdicionadas: 17171,
+      linhasRemovidas: 1302,
+      primeiroCommit: '2026-10-14',
+      ultimoCommit: '2026-11-02',
+      fonte: 'Contagem pelo histórico git de todas as branches (contas MyNameisNunes e tnunes-kz), sem lockfiles, arquivos gerados nem documentos gerados automaticamente.',
+    },
+    pessoas: 3,
+  },
+  {
+    slug: 'abp-3dsm-2026-1',
+    categoria: 'academico',
+    abp: true,
+    semestre: '3DSM – 1º Sem. 2026',
+    cor: 'ar',
+    nome: 'CRM de Gestão de Leads',
+    tagline: 'CRM full stack para a gestão de leads de uma revendedora de veículos, com Kanban, acesso por perfil e dashboards analíticos.',
+    contexto: 'ABP · 3º semestre DSM · Fatec Jacareí',
+    parceiro: '1000 Valle Multimarcas',
+    periodo: 'mar.–jun. 2026',
+    status: { tipo: 'concluido', rotulo: 'Encerrado' },
+    papel: 'Dev Team · foco em front-end React',
+    repo: { full: 'CRIMS0NC0DE/3DSM-ABP-2026-1', url: 'https://github.com/CRIMS0NC0DE/3DSM-ABP-2026-1' },
+    capa: {
+      src: 'assets/img/projetos/abp-3dsm-2026-1/capa-g.webp',
+      mini: 'assets/img/projetos/abp-3dsm-2026-1/capa-m.webp',
+      largura: 1200,
+      altura: 750,
+      posicao: 'left center',
+      semSelo: true,
+      alt: 'Capa do projeto Gestão de Leads da 1000 Valle Multimarcas',
+      legenda: 'Capa ilustrativa: o repositório não tem capturas de tela da interface.',
+    },
+    tecnologiasPrincipais: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Prisma', 'PostgreSQL', 'Docker'],
+    contribuicaoResumo: 'Atuei no time de desenvolvimento com foco em front-end React/TypeScript: Kanban de leads com arrastar-e-soltar, dashboards ligados à API, colaboradores e tela de auditoria. No back-end, construí o módulo de leads (Express + Prisma), o arquivamento do funil e a migration que padronizou os estágios. Pelo git blame, sou o maior autor individual do código da versão final (cerca de 45% das linhas).',
+    estatisticas: {
+      commits: 37,
+      commitsObs: '29 sem contar merge',
+      prs: 2,
+      linhasAdicionadas: 11707,
+      linhasRemovidas: 3403,
+      primeiroCommit: '2026-04-03',
+      ultimoCommit: '2026-06-12',
+      extras: [{ rotulo: 'Autoria do código final', valor: '≈ 45%', obs: 'maior fatia individual (git blame)' }],
+      fonte: 'Contagem pelo histórico git de todas as branches e do meu fork (contas MyNameisNunes e tnunes-kz), sem lockfiles, binários nem o CSV de leads fictícios. Autoria: git blame nos arquivos .ts, .tsx, .prisma e .sql da main.',
+    },
+    pessoas: 6,
+  },
+  {
+    slug: 'iot-project-arcade',
+    categoria: 'academico',
+    abp: false,
+    semestre: '4DSM – 2º Sem. 2026',
+    cor: 'agua',
+    rotuloCapa: 'Projeto de IoT',
+    nome: 'Arcade Cloud Score',
+    tagline: 'Fliperama IoT com Raspberry Pi, ESP32 e MQTT: ranking ao vivo, conquistas e saves na nuvem por jogador.',
+    contexto: 'Projeto acadêmico de IoT · DSM · Fatec Jacareí',
+    periodo: 'set.–out. 2026',
+    status: { tipo: 'concluido', rotulo: 'Protótipo funcional' },
+    papel: 'Desenvolvimento de ponta a ponta',
+    repo: {
+      full: 'CRIMS0NC0DE/IoTProjectArcade',
+      url: 'https://github.com/CRIMS0NC0DE/IoTProjectArcade',
+    },
+    capa: {
+      src: 'assets/img/projetos/iot-project-arcade/painel-iot-g.webp',
+      mini: 'assets/img/projetos/iot-project-arcade/painel-iot-m.webp',
+      largura: 1366,
+      altura: 900,
+      alt: 'Painel IoT do Arcade Cloud Score com temperatura, joystick e LEDs do ESP32 ao vivo',
+    },
+    tecnologiasPrincipais: ['Python', 'FastAPI', 'MQTT', 'PostgreSQL', 'ESP32 (C++)', 'Raspberry Pi'],
+    contribuicaoResumo: 'Desenvolvi o projeto de ponta a ponta: firmware do ESP32 em C++, cliente Python no Raspberry Pi (Batocera), back-end FastAPI orientado a eventos MQTT, banco PostgreSQL e dashboard web. Sou o autor de todos os commits do repositório.',
+    estatisticas: {
+      commits: 6,
+      commitsObs: '5 sem contar merge',
+      prs: 1,
+      linhasAdicionadas: 6275,
+      linhasRemovidas: 57,
+      primeiroCommit: '2026-09-29',
+      ultimoCommit: '2026-10-04',
+      fonte: 'Contagem pelo histórico git (contas MyNameisNunes e tnunes-kz), sem lockfiles nem arquivos gerados.',
+    },
+    pessoas: 1,
+  },
+];

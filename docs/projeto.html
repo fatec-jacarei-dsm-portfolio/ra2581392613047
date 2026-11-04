@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estudo de caso · Thiago Nunes</title>
+<meta name="description" content="Estudo de caso de projeto de Thiago Nunes — contexto, contribuição pessoal, arquitetura, tecnologias e processo.">
+<meta name="author" content="Thiago Nunes Alves do Prado">
+<meta name="theme-color" content="#F4E8BC">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Estudo de caso · Thiago Nunes">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/zen-kaku-gothic-new-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/projeto.css">
+
+<!-- Dados → núcleo → página (o estudo de caso completo é carregado sob demanda) -->
+<script defer src="assets/js/dados/perfil.js"></script>
+<script defer src="assets/js/dados/projetos.js"></script>
+<script defer src="assets/js/site.js"></script>
+<script defer src="assets/js/projeto.js"></script>
+</head>
+<body data-el="terra" data-el-fixo>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="bg" id="bg" aria-hidden="true"></div>
+  <div class="tint" aria-hidden="true"></div>
+  <div class="fx" aria-hidden="true">
+    <div class="fx-g fx-ar">
+      <img class="cloud c1" src="assets/img/efeitos/nuvem-a.svg" alt="">
+      <img class="cloud c2" src="assets/img/efeitos/nuvem-b.svg" alt="">
+      <img class="cloud c3" src="assets/img/efeitos/nuvem-a.svg" alt="">
+    </div>
+    <div class="fx-g fx-terra"><div id="leaves"></div></div>
+    <div class="fx-g fx-fogo"><div class="glow"></div><div id="embers"></div></div>
+    <div class="fx-g fx-agua">
+      <div id="bubbles"></div>
+      <svg class="wave w1" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C120,20 240,20 360,60 S600,100 720,60 S960,20 1080,60 S1320,100 1440,60 L1440,120 L0,120Z"/></svg>
+      <svg class="wave w2" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C120,20 240,20 360,60 S600,100 720,60 S960,20 1080,60 S1320,100 1440,60 L1440,120 L0,120Z"/></svg>
+    </div>
+  </div>
+  <div class="veil" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html#inicio"><span class="seal" aria-hidden="true">TN</span><span class="brand-name">Thiago Nunes</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="menu" aria-label="Principal">
+      <a class="nav-link" href="index.html#sobre">Sobre</a>
+      <a class="nav-link" href="index.html#projetos" aria-current="page">Projetos</a>
+      <a class="nav-link" href="index.html#complementares">Formação</a>
+      <a class="nav-link" href="index.html#contato">Contato</a>
+      <span class="nav-social" data-redes="github linkedin"></span>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="case-top">
+    <div id="case">
+      <noscript>
+        <div class="section"><div class="panel">
+          <h1>Estudo de caso</h1>
+          <p>Ative o JavaScript para ver este estudo de caso, ou volte para a <a href="index.html#projetos">lista de projetos</a>.</p>
+        </div></div>
+      </noscript>
+    </div>
+  </main>
+
+  <footer class="section site-footer">
+    <div class="panel">
+      <div class="footer-note" style="margin-top:0;padding-top:0;border-top:0">
+        <span>© <span data-ano>2026</span> Thiago Nunes · Fatec Jacareí · DSM</span>
+        <span class="nav-social" data-redes="github linkedin"></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
