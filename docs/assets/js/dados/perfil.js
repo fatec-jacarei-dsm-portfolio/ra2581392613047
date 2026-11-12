@@ -17,7 +17,7 @@ PORTFOLIO.perfil = {
 
   /* ---------- Apresentação ---------- */
   apresentacao: [
-    'Sou Thiago Nunes Alves do Prado, estudante do 4º semestre de Desenvolvimento de Software Multiplataforma (DSM) na Fatec Jacareí, e trabalho como desenvolvedor web.',
+    'Sou Thiago Nunes Alves do Prado, estudante do 4º semestre de Desenvolvimento de Software Multiplataforma (DSM) na Fatec Jacareí, e trabalho como desenvolvedor full stack na 1000 Valle Multimarcas. Antes, fui responsável pelo Portal de Negócios da Prefeitura de Jacareí.',
     'Gosto de construir sistemas de ponta a ponta. Nos Projetos Integradores (ABP) atuei no front-end web e mobile, no back-end e no banco de dados, sempre em equipe e com metodologias ágeis. No projeto de IoT do 4º semestre, fui do firmware do ESP32 ao dashboard web.',
     'Fora das entregas do curso, mantenho projetos pessoais para estudar tecnologias novas, como React com TypeScript, Socket.IO e extensões para o VS Code, incluindo uma que integra IA ao editor.',
   ],
@@ -35,14 +35,25 @@ PORTFOLIO.perfil = {
     { id: 'linkedin', rotulo: 'LinkedIn', usuario: 'in/thhiagon', url: 'https://www.linkedin.com/in/thhiagon/', icone: 'linkedin' },
   ],
 
-  /* ---------- Experiência profissional (aparece em Projetos › Profissionais) ---------- */
+  /* ---------- Experiência profissional (aparece em Projetos › Profissionais) ----------
+     Da mais recente para a mais antiga. contribuicao aparece no quadro
+     "Minha contribuição", igual aos projetos. */
   experiencias: [
     {
+      cargo: 'Desenvolvedor Full Stack',
+      empresa: '1000 Valle Multimarcas',
+      periodo: 'abr. 2026 – atual',
+      descricao: 'Desenvolvimento do sistema CRM da revendedora de veículos, da interface web ao banco de dados. A empresa também foi a parceira do ABP do 3º semestre.',
+      contribuicao: 'Crio telas e componentes em React com Tailwind CSS e cuido do back-end com Prisma e SQL: modelagem das tabelas, consultas e regras de negócio, levando cada funcionalidade da interface até o banco.',
+      tecnologias: ['React', 'Tailwind CSS', 'Prisma', 'SQL'],
+    },
+    {
       cargo: 'Desenvolvedor Web',
-      empresa: '',            // opcional: nome da empresa
-      periodo: 'Atual',       // ex.: 'Desde mar. 2026'
-      descricao: 'Atuação profissional como desenvolvedor web. Os repositórios da empresa são privados, por isso não aparecem aqui.',
-      tecnologias: [],        // ex.: ['PHP', 'JavaScript', 'MySQL']
+      empresa: 'Prefeitura de Jacareí',
+      periodo: 'nov. 2025 – abr. 2026',
+      descricao: 'Portal de Negócios: plataforma B2G (governo para empresas) que aproxima microempreendedores individuais (MEIs) de empresas locais para fechar negócios e atribuir serviços.',
+      contribuicao: 'Fui responsável pela aplicação do portal: desenvolvi as telas em Vue.js com Tailwind CSS e o back-end em PHP com banco SQL, incluindo a integração entre os cadastros de MEIs e de empresas e o fluxo de negócios e atribuições entre eles.',
+      tecnologias: ['Vue.js', 'Tailwind CSS', 'PHP', 'SQL'],
     },
   ],
 

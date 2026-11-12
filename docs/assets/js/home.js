@@ -14,7 +14,7 @@
     { id: 'academico', ancora: 'academicos', titulo: 'Acadêmicos', icone: 'camadas',
       descricao: 'Projetos Integradores (ABP) e trabalhos das disciplinas do curso de DSM na Fatec Jacareí.' },
     { id: 'profissional', ancora: 'profissionais', titulo: 'Profissionais', icone: 'ferramenta',
-      descricao: 'Experiência como desenvolvedor e projetos feitos em contexto profissional.' },
+      descricao: 'Experiência como desenvolvedor e projetos feitos em contexto profissional. O código desses sistemas é privado, por isso não há link para repositório.' },
     { id: 'pessoal', ancora: 'pessoais', titulo: 'Pessoais', icone: 'lampada',
       descricao: 'Estudos e ideias próprias, feitos por conta própria para aprender e experimentar.' },
   ];
@@ -113,6 +113,7 @@
       h(nivel, null, e.cargo),
       e.empresa ? h('p', { class: 'proj-context' }, e.empresa) : null,
       h('p', { class: 'proj-desc' }, e.descricao),
+      contribBox(e.contribuicao),
       techList(e.tecnologias),
     );
   }
