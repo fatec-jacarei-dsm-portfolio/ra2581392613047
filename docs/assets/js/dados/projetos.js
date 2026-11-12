@@ -6,7 +6,8 @@
    Campos que a orientação da Fatec pede em cada projeto:
    nome · tagline (descrição) · contribuicaoResumo (contribuição pessoal)
    · tecnologiasPrincipais · repo.url · semestre ("4DSM – 2º Sem. 2026")
-   Conteúdo conferido nos repositórios do GitHub em 03/11/2026.
+   Conteúdo conferido nos repositórios do GitHub em 03/11/2026
+   (ABP do 4º semestre atualizado em 12/11/2026, após a Sprint 2).
    ========================================================================== */
 window.PORTFOLIO = window.PORTFOLIO || {};
 
@@ -34,18 +35,18 @@ PORTFOLIO.projetos = [
       legenda: 'Protótipo do fluxo principal do app (docs/Design.pdf do repositório).',
     },
     tecnologiasPrincipais: ['Flutter', 'Dart', 'Node.js', 'TypeScript', 'PostgreSQL', 'MQTT', 'ESP32'],
-    contribuicaoResumo: 'Trabalhei principalmente no app Flutter: montei a base do app (arquitetura, tema Material 3 acessível e componentes), integrei as telas à API REST com sessão JWT e entreguei o fluxo completo de acesso por QR Code (PR #17). Na branch dev-thiago, fiz também as telas do morador, do visitante e da equipe e correções no back-end.',
+    contribuicaoResumo: 'Trabalhei principalmente no app Flutter: montei a base do app (arquitetura, tema Material 3 acessível e componentes), integrei as telas à API REST com sessão JWT e entreguei o fluxo de acesso por QR Code (PR #17) e as telas dos quatro perfis, com as mudanças no back-end que elas pediam (PR #22). Na Sprint 2, fiz também o teste de bancada e o guia de montagem do terminal ESP32.',
     estatisticas: {
-      commits: 31,
-      commitsObs: '26 sem contar merge',
-      prs: 1,
-      linhasAdicionadas: 17171,
-      linhasRemovidas: 1302,
+      commits: 37,
+      commitsObs: '30 sem contar merge',
+      prs: 2,
+      linhasAdicionadas: 20127,
+      linhasRemovidas: 1554,
       primeiroCommit: '2026-10-14',
-      ultimoCommit: '2026-11-02',
+      ultimoCommit: '2026-11-11',
       fonte: 'Contagem pelo histórico git de todas as branches (contas MyNameisNunes e tnunes-kz), sem lockfiles, arquivos gerados nem documentos gerados automaticamente.',
     },
-    pessoas: 3,
+    pessoas: 5,
   },
   {
     slug: 'abp-3dsm-2026-1',

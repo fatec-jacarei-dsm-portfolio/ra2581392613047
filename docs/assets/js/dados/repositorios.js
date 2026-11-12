@@ -8,12 +8,48 @@
    area:      'web' | 'mobile' | 'backend' | 'dados' | 'iot' | 'devops' | 'estudos' | 'outro'
    semestre:  ABP/disciplina → "3DSM – 1º Sem. 2026"; pessoal → "1º Sem. 2026"
    destaque:  0–5 (ordem dentro do mesmo semestre)
-   Levantamento feito nos repositórios do GitHub em 03/11/2026.
+   Levantamento feito nos repositórios do GitHub em 12/11/2026.
    ========================================================================== */
 window.PORTFOLIO = window.PORTFOLIO || {};
 
 PORTFOLIO.repositorios = [
   /* ---------------- Acadêmicos ---------------- */
+  {
+    nome: 'Registro Acadêmico',
+    repo: 'MyNameisNunes/AtividadeArley01',
+    categoria: 'academico',
+    area: 'web',
+    semestre: '4DSM – 2º Sem. 2026',
+    contexto: 'Fatec · Laboratório de Desenvolvimento Web · Atividade 1',
+    descricao: 'Aplicação web para consultar e cadastrar alunos e matrículas e consultar o catálogo de disciplinas, praticando rotas estáticas e dinâmicas, layouts aninhados e estado compartilhado no App Router do Next.js. Os novos cadastros ficam no navegador, sem alterar os dados fornecidos.',
+    contribuicao: 'Atividade individual: desenvolvi as rotas, os layouts e os componentes, o estado compartilhado com Context API e localStorage, as validações (RA único e matrícula sem duplicidade) e os testes unitários (Vitest) e de ponta a ponta com auditoria de acessibilidade (Playwright e axe-core).',
+    tecnologias: ['Next.js', 'React', 'TypeScript', 'CSS Modules', 'Vitest', 'Playwright'],
+    destaque: 4,
+  },
+  {
+    nome: 'Controle de Gastos com Combustível',
+    repo: 'MyNameisNunes/AtividaeArley02',
+    categoria: 'academico',
+    area: 'mobile',
+    semestre: '4DSM – 2º Sem. 2026',
+    contexto: 'Fatec · desenvolvimento mobile',
+    descricao: 'App que registra abastecimentos e calcula o consumo (km/L) e o custo por km (R$/km), com marca e modelo do veículo vindos da tabela FIPE (BrasilAPI), dados salvos em SQLite e gráficos de evolução no dashboard.',
+    contribuicao: 'Atividade individual: desenvolvi o app em camadas (views, controllers, services e models) com Provider, o banco SQLite com exclusão em cascata e trigger de veículo único, o cliente da BrasilAPI com tratamento de erros, os gráficos e 36 testes de unidade e de widget.',
+    tecnologias: ['Flutter', 'Dart', 'SQLite', 'Provider', 'fl_chart', 'BrasilAPI'],
+    destaque: 4,
+  },
+  {
+    nome: 'Previsão do Tempo CPTEC/INPE',
+    repo: 'MyNameisNunes/AtividadeArley03',
+    categoria: 'academico',
+    area: 'mobile',
+    semestre: '4DSM – 2º Sem. 2026',
+    contexto: 'Fatec · desenvolvimento mobile',
+    descricao: 'App que pesquisa municípios na API pública do CPTEC/INPE e mostra a previsão de 4 dias com cards, gráfico de temperaturas e índice UV. Cidades favoritas, recentes e a última previsão de cada uma ficam em SQLite para uso offline.',
+    contribuicao: 'Atividade individual: desenvolvi o app completo, incluindo o parser de XML em ISO-8859-1 que aceita as diferenças entre a API real e a documentação, a busca com debounce, o cache offline com aviso de dados salvos e 54 testes de unidade e de widget, além de um teste de ponta a ponta contra a API real.',
+    tecnologias: ['Flutter', 'Dart', 'SQLite', 'Provider', 'fl_chart'],
+    destaque: 4,
+  },
   {
     nome: 'Cadastro de Pessoas com CI/CD',
     repo: 'MyNameisNunes/AtividadeDevOps',
@@ -113,6 +149,18 @@ PORTFOLIO.repositorios = [
   },
 
   /* ---------------- Pessoais ---------------- */
+  {
+    nome: 'AI Copilot Router (VS Code)',
+    repo: 'MyNameisNunes/ai-autocomplete',
+    categoria: 'pessoal',
+    area: 'outro',
+    semestre: '2º Sem. 2026',
+    contexto: 'Projeto pessoal',
+    descricao: 'Extensão do VS Code que une dois fluxos de IA: autocomplete em tempo real (ghost text) com o Gemini 2.5 Flash-Lite via Fill-in-the-Middle e um atalho que abre o Claude Code no terminal integrado, com o arquivo e a seleção já no prompt.',
+    contribuicao: 'Projeto individual: implementei o provedor de sugestões com debounce e cancelamento da requisição quando se volta a digitar, a extração do contexto ao redor do cursor, o indicador de estado na barra de status e a integração com o Claude Code CLI.',
+    tecnologias: ['TypeScript', 'VS Code Extension API', 'Gemini API', 'Claude Code', 'esbuild'],
+    destaque: 4,
+  },
   {
     nome: 'Portfólio em React (versão anterior)',
     repo: 'MyNameisNunes/Portfolio-Fatec',

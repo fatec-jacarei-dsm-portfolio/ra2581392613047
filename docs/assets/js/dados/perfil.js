@@ -19,7 +19,7 @@ PORTFOLIO.perfil = {
   apresentacao: [
     'Sou Thiago Nunes Alves do Prado, estudante do 4º semestre de Desenvolvimento de Software Multiplataforma (DSM) na Fatec Jacareí, e trabalho como desenvolvedor web.',
     'Gosto de construir sistemas de ponta a ponta. Nos Projetos Integradores (ABP) atuei no front-end web e mobile, no back-end e no banco de dados, sempre em equipe e com metodologias ágeis. No projeto de IoT do 4º semestre, fui do firmware do ESP32 ao dashboard web.',
-    'Fora das entregas do curso, mantenho projetos pessoais para estudar tecnologias novas, como React com TypeScript, Socket.IO e extensões para o VS Code.',
+    'Fora das entregas do curso, mantenho projetos pessoais para estudar tecnologias novas, como React com TypeScript, Socket.IO e extensões para o VS Code, incluindo uma que integra IA ao editor.',
   ],
   objetivo: 'Evoluir como desenvolvedor full stack, criando produtos web e mobile que se conectam ao mundo físico (IoT), com código bem testado e entrega contínua.',
   interesses: [
@@ -65,12 +65,12 @@ PORTFOLIO.perfil = {
     },
   ],
   conhecimentos: [
-    { categoria: 'Front-end', itens: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Tailwind CSS', 'Vite'] },
+    { categoria: 'Front-end', itens: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Vite'] },
     { categoria: 'Back-end', itens: ['Node.js', 'Express', 'Prisma', 'Python', 'FastAPI', 'PHP', 'Socket.IO', 'APIs REST', 'JWT'] },
     { categoria: 'Mobile', itens: ['Flutter', 'Dart', 'SQLite'] },
     { categoria: 'Bancos de dados', itens: ['MySQL', 'PostgreSQL', 'MongoDB'] },
     { categoria: 'IoT e hardware', itens: ['ESP32', 'C++', 'Raspberry Pi', 'MQTT'] },
-    { categoria: 'DevOps e ferramentas', itens: ['Git', 'GitHub', 'Docker', 'GitHub Actions', 'Jest', 'Scrum'] },
+    { categoria: 'DevOps e ferramentas', itens: ['Git', 'GitHub', 'Docker', 'GitHub Actions', 'Jest', 'Vitest', 'Playwright', 'Scrum'] },
   ],
   idiomas: [
     // { idioma: 'Português', nivel: 'Nativo' },
